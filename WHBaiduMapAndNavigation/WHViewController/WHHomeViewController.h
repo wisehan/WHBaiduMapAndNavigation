@@ -10,4 +10,12 @@
 
 @interface WHHomeViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *startLocation;
+@property (weak, nonatomic) IBOutlet UIButton *startFollowing;
+@property (weak, nonatomic) IBOutlet UIButton *startFollowHeading;
+@property (weak, nonatomic) IBOutlet UIButton *stopLocation;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *GoToNavigation;
+
 @end

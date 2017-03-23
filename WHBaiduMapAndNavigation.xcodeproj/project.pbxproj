@@ -37,6 +37,8 @@
 		041316981E83A6E5002A045D /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 041316971E83A6E5002A045D /* mapapi.bundle */; };
 		0413169B1E83AA66002A045D /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0413169A1E83AA66002A045D /* libcrypto.a */; };
 		0413169D1E83AA74002A045D /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0413169C1E83AA74002A045D /* libssl.a */; };
+		041316A61E83BBC7002A045D /* WHBaiduNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041316A41E83BBC7002A045D /* WHBaiduNaviViewController.m */; };
+		041316A71E83BBC7002A045D /* WHBaiduNaviViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041316A51E83BBC7002A045D /* WHBaiduNaviViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,9 @@
 		041316991E83A77F002A045D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0413169A1E83AA66002A045D /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = WHBaiduMapAndNavigation/ThirdParty/thirdlibs/libcrypto.a; sourceTree = "<group>"; };
 		0413169C1E83AA74002A045D /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = WHBaiduMapAndNavigation/ThirdParty/thirdlibs/libssl.a; sourceTree = "<group>"; };
+		041316A31E83BBC7002A045D /* WHBaiduNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHBaiduNaviViewController.h; sourceTree = "<group>"; };
+		041316A41E83BBC7002A045D /* WHBaiduNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHBaiduNaviViewController.m; sourceTree = "<group>"; };
+		041316A51E83BBC7002A045D /* WHBaiduNaviViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHBaiduNaviViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +229,9 @@
 				041316551E836AB6002A045D /* WHHomeViewController.h */,
 				041316561E836AB6002A045D /* WHHomeViewController.m */,
 				041316571E836AB6002A045D /* WHHomeViewController.xib */,
+				041316A31E83BBC7002A045D /* WHBaiduNaviViewController.h */,
+				041316A41E83BBC7002A045D /* WHBaiduNaviViewController.m */,
+				041316A51E83BBC7002A045D /* WHBaiduNaviViewController.xib */,
 			);
 			path = WHViewController;
 			sourceTree = "<group>";
@@ -378,6 +386,7 @@
 				041316261E836132002A045D /* LaunchScreen.storyboard in Resources */,
 				041316541E836A22002A045D /* Balloon@2x.png in Resources */,
 				041316231E836132002A045D /* Assets.xcassets in Resources */,
+				041316A71E83BBC7002A045D /* WHBaiduNaviViewController.xib in Resources */,
 				041316981E83A6E5002A045D /* mapapi.bundle in Resources */,
 				041316591E836AB6002A045D /* WHHomeViewController.xib in Resources */,
 				041316211E836132002A045D /* Main.storyboard in Resources */,
@@ -409,6 +418,7 @@
 				0413161E1E836132002A045D /* ViewController.m in Sources */,
 				0413161B1E836132002A045D /* AppDelegate.m in Sources */,
 				041316181E836132002A045D /* main.m in Sources */,
+				041316A61E83BBC7002A045D /* WHBaiduNaviViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
