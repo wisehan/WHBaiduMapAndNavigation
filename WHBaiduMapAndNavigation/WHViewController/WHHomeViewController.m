@@ -12,6 +12,7 @@
 @interface WHHomeViewController ()<BMKMapViewDelegate,BMKLocationServiceDelegate>{
     BMKLocationService *_locationService;
     BMKMapView *_mapView;
+    BMKLocationViewDisplayParam *param;
 }
 
 //@property (nonatomic, assign) BMKMapView *mapView;
@@ -78,9 +79,10 @@
 
 //自定义精度圈
 - (void)customLocationAccuracyCircle {
-    BMKLocationViewDisplayParam *param = [[BMKLocationViewDisplayParam alloc] init];
+    param = [[BMKLocationViewDisplayParam alloc] init];
     param.accuracyCircleStrokeColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:0.5];
     param.accuracyCircleFillColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.3];
+    param.isAccuracyCircleShow = YES;
     [_mapView updateLocationViewWithParam:param];
 }
 
@@ -88,6 +90,7 @@
 - (IBAction)startLocationClick:(UIButton *)sender {
     //仅获取当前位置经纬度并不能跳转到当前位置
     NSLog(@"进入普通定位态");
+    param.isAccuracyCircleShow = NO;
     [_locationService startUserLocationService];
     _mapView.showsUserLocation = NO;//先关闭显示的定位图层
     _mapView.userTrackingMode = BMKUserTrackingModeNone;//设置定位的状态
@@ -103,16 +106,17 @@
 }
 - (IBAction)startFollowingClick:(UIButton *)sender {
     //能定位并且能跳转到当前位置
-    NSLog(@"进入罗盘态");
-    _mapView.showsUserLocation = NO;
-    _mapView.userTrackingMode = BMKUserTrackingModeFollowWithHeading;
-    _mapView.showsUserLocation = YES;
-}
-- (IBAction)startFollowHeadingClick:(UIButton *)sender {
-    //能定位并且能跳转到当前位置
     NSLog(@"进入跟随态");
     _mapView.showsUserLocation = NO;
     _mapView.userTrackingMode = BMKUserTrackingModeFollow;
+    _mapView.showsUserLocation = YES;
+    
+}
+- (IBAction)startFollowHeadingClick:(UIButton *)sender {
+    //能定位并且能跳转到当前位置
+    NSLog(@"进入罗盘态");
+    _mapView.showsUserLocation = NO;
+    _mapView.userTrackingMode = BMKUserTrackingModeFollowWithHeading;
     _mapView.showsUserLocation = YES;
 }
 - (IBAction)stopLocationClick:(UIButton *)sender {
@@ -149,8 +153,8 @@
  *@param userLocation 新的用户位置
  */
 - (void)didUpdateUserHeading:(BMKUserLocation *)userLocation{
+//    NSLog(@"heading is %@",userLocation.heading);
     [_mapView updateLocationData:userLocation];
-    NSLog(@"heading is %@",userLocation.heading);
 }
 
 /**
