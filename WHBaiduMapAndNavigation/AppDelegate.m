@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WHHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    WHHomeViewController *WHHomeVC = [[WHHomeViewController alloc] init];
+    self.window.rootViewController = WHHomeVC;
+    
+    
     // Override point for customization after application launch.
     return YES;
 }

@@ -15,6 +15,9 @@
 		041316261E836132002A045D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041316241E836132002A045D /* LaunchScreen.storyboard */; };
 		041316311E836132002A045D /* WHBaiduMapAndNavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041316301E836132002A045D /* WHBaiduMapAndNavigationTests.m */; };
 		0413163C1E836132002A045D /* WHBaiduMapAndNavigationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0413163B1E836132002A045D /* WHBaiduMapAndNavigationUITests.m */; };
+		041316541E836A22002A045D /* Balloon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 041316531E836A22002A045D /* Balloon@2x.png */; };
+		041316581E836AB6002A045D /* WHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041316561E836AB6002A045D /* WHHomeViewController.m */; };
+		041316591E836AB6002A045D /* WHHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041316571E836AB6002A045D /* WHHomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		041316371E836132002A045D /* WHBaiduMapAndNavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WHBaiduMapAndNavigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0413163B1E836132002A045D /* WHBaiduMapAndNavigationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHBaiduMapAndNavigationUITests.m; sourceTree = "<group>"; };
 		0413163D1E836132002A045D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041316531E836A22002A045D /* Balloon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Balloon@2x.png"; sourceTree = "<group>"; };
+		041316551E836AB6002A045D /* WHHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHHomeViewController.h; sourceTree = "<group>"; };
+		041316561E836AB6002A045D /* WHHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHHomeViewController.m; sourceTree = "<group>"; };
+		041316571E836AB6002A045D /* WHHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHHomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +108,10 @@
 		041316151E836132002A045D /* WHBaiduMapAndNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				041316191E836132002A045D /* AppDelegate.h */,
-				0413161A1E836132002A045D /* AppDelegate.m */,
-				0413161C1E836132002A045D /* ViewController.h */,
-				0413161D1E836132002A045D /* ViewController.m */,
-				0413161F1E836132002A045D /* Main.storyboard */,
-				041316221E836132002A045D /* Assets.xcassets */,
-				041316241E836132002A045D /* LaunchScreen.storyboard */,
-				041316271E836132002A045D /* Info.plist */,
+				041316491E836957002A045D /* Images */,
+				0413164A1E836957002A045D /* Third */,
+				0413164B1E836957002A045D /* WHView */,
+				0413164C1E836957002A045D /* WHViewController */,
 				041316161E836132002A045D /* Supporting Files */,
 			);
 			path = WHBaiduMapAndNavigation;
@@ -117,6 +120,14 @@
 		041316161E836132002A045D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				041316191E836132002A045D /* AppDelegate.h */,
+				0413161A1E836132002A045D /* AppDelegate.m */,
+				0413161C1E836132002A045D /* ViewController.h */,
+				0413161D1E836132002A045D /* ViewController.m */,
+				0413161F1E836132002A045D /* Main.storyboard */,
+				041316221E836132002A045D /* Assets.xcassets */,
+				041316241E836132002A045D /* LaunchScreen.storyboard */,
+				041316271E836132002A045D /* Info.plist */,
 				041316171E836132002A045D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +149,38 @@
 				0413163D1E836132002A045D /* Info.plist */,
 			);
 			path = WHBaiduMapAndNavigationUITests;
+			sourceTree = "<group>";
+		};
+		041316491E836957002A045D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				041316531E836A22002A045D /* Balloon@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		0413164A1E836957002A045D /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		0413164B1E836957002A045D /* WHView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WHView;
+			sourceTree = "<group>";
+		};
+		0413164C1E836957002A045D /* WHViewController */ = {
+			isa = PBXGroup;
+			children = (
+				041316551E836AB6002A045D /* WHHomeViewController.h */,
+				041316561E836AB6002A045D /* WHHomeViewController.m */,
+				041316571E836AB6002A045D /* WHHomeViewController.xib */,
+			);
+			path = WHViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				041316261E836132002A045D /* LaunchScreen.storyboard in Resources */,
+				041316541E836A22002A045D /* Balloon@2x.png in Resources */,
 				041316231E836132002A045D /* Assets.xcassets in Resources */,
+				041316591E836AB6002A045D /* WHHomeViewController.xib in Resources */,
 				041316211E836132002A045D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041316581E836AB6002A045D /* WHHomeViewController.m in Sources */,
 				0413161E1E836132002A045D /* ViewController.m in Sources */,
 				0413161B1E836132002A045D /* AppDelegate.m in Sources */,
 				041316181E836132002A045D /* main.m in Sources */,
@@ -505,6 +551,7 @@
 				041316421E836132002A045D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		041316431E836132002A045D /* Build configuration list for PBXNativeTarget "WHBaiduMapAndNavigationTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +560,7 @@
 				041316451E836132002A045D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		041316461E836132002A045D /* Build configuration list for PBXNativeTarget "WHBaiduMapAndNavigationUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +569,7 @@
 				041316481E836132002A045D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
