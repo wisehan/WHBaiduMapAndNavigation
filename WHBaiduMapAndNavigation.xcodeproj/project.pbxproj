@@ -109,8 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				041316491E836957002A045D /* Images */,
-				0413164A1E836957002A045D /* Third */,
-				0413164B1E836957002A045D /* WHView */,
 				0413164C1E836957002A045D /* WHViewController */,
 				041316161E836132002A045D /* Supporting Files */,
 			);
@@ -157,20 +155,6 @@
 				041316531E836A22002A045D /* Balloon@2x.png */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		0413164A1E836957002A045D /* Third */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Third;
-			sourceTree = "<group>";
-		};
-		0413164B1E836957002A045D /* WHView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WHView;
 			sourceTree = "<group>";
 		};
 		0413164C1E836957002A045D /* WHViewController */ = {
