@@ -24,14 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.title = @"HOME_Map";
-    UIBarButtonItem* barItem = [[UIBarButtonItem alloc]init];
-    barItem.target = self;
-    barItem.action = @selector(customLocationAccuracyCircle);
-    barItem.title = @"自定义精度圈";
-    self.navigationItem.rightBarButtonItem = barItem;
-    
+        
     [self initAllView];
     
     
@@ -39,6 +32,13 @@
 }
 
 - (void)initAllView{
+    self.title = @"HOME_Map";
+    UIBarButtonItem* barItem = [[UIBarButtonItem alloc]init];
+    barItem.target = self;
+    barItem.action = @selector(customLocationAccuracyCircle);
+    barItem.title = @"自定义精度圈";
+    self.navigationItem.rightBarButtonItem = barItem;
+    
     //基本地图
     _mapView = [[BMKMapView alloc]initWithFrame:CGRectMake(0, 0, 375, 603)];
     self.view = _mapView;
