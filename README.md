@@ -1,2 +1,2 @@
 # WHBaiduMapAndNavigation
-# BaiduMap
+# BaiduMapAndNavigation
